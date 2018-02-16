@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {},
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.16.2",
-      "serverless-http": "^1.5.3"
-    }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.196.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "serverless-http": "^1.5.3"
   }
+}
