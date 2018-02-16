@@ -2,6 +2,9 @@ service: my-express-application
 
 custom:
   tableName: 'users-table-${self:provider.stage}'
+  dynamodb:
+    start:
+      migrate: true
 
 provider:
   name: aws
@@ -54,3 +57,8 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.tableName}
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-offline
+
